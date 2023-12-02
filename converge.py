@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 initial_matrix = "final project math 214.xlsx"
 adjusted_matrix = "adjusted_matrix.xlsx"
 
-df = pd.read_excel(adjusted_matrix)
+df = pd.read_excel(initial_matrix)
 matrix = df.to_numpy()
 
 
@@ -43,8 +43,14 @@ Initial_state = np.array(
 
 T = np.linalg.matrix_power(matrix, 20)
 result = np.dot(T, Initial_state)
-new_result = result
-print(new_result)
+new_result = result * 100
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w']
+
+for i in range(23):
+    print(f'{letters[i]} {new_result[i][0]}')
+
+#print(new_result)
 
 # Compute eigenvalues and eigenvectors
 eigenvalues, eigenvectors = np.linalg.eig(matrix)
