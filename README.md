@@ -1,1 +1,6 @@
-# 214project
+# Traffic Optimization
+We developed a Markov chain–based model to optimize traffic flow in Ann Arbor, with a focus on high-congestion scenarios such as University of Michigan game days and adverse weather conditions. Using historical traffic data, we could determine the business of any given intersection. These classifications were used to construct a Markov transition matrix representing traffic movement patterns. By analyzing the steady-state distribution, we proposed alternate routing strategies aimed at reducing congestion on key streets. Our results demonstrate the potential of probabilistic modeling to inform more efficient urban traffic systems.
+
+This steady state can be used for a number of applications, such as determining optimal advertisement locations, real estate pricing based on traffic and noise pollution, and developing an infrastructure budget. We chose an area to optimize, encapsulated by State Street, Williams Street, South Main Street, and East Washington Street. To create the transition matrix, we estimated the probability of a car going straight right or left at every intersection. We did this by using historical traffic data and creating proportions at each intersection. 
+
+# Please refer to Traffic Optimization.pdf for more details
